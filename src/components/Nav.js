@@ -142,10 +142,10 @@ class Nav extends React.Component {
 
     render() {
         const routes = [
-            { path: '/popular', title: 'Popular' },
-            { path: '/top-rated', title: 'Top Rated' },
-            { path: '/favorites', title: 'My Favorites' },
-            { path: '/contact-us', title: 'Contact' }
+            { path: './popular', title: 'Popular' },
+            { path: './top-rated', title: 'Top Rated' },
+            { path: './favorites', title: 'My Favorites' },
+            { path: './contact-us', title: 'Contact' }
         ];
         return (
             <Wrapper onTop={this.state.onTop}>

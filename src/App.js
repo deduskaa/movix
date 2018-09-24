@@ -54,7 +54,6 @@ class App extends Component {
                         render={() => <PopularPage movies={this.state.movies} />}
                     />
                     <Route
-                        exact
                         path="/popular"
                         render={() => <PopularPage movies={this.state.movies} />}
                     />
