@@ -49,29 +49,29 @@ class App extends Component {
                 <div className="App">
                     <Nav />
                     <Route
-                        exact
-                        path="/"
-                        render={() => <PopularPage movies={this.state.movies} />}
-                    />
-                    <Route
-                        path="/popular"
+                        path={process.env.PUBLIC_URL + '/popular'}
                         render={() => <PopularPage movies={this.state.movies} />}
                     />
                     <Route
                         path="/top-rated"
                         render={() => <TopRatedPage movies={this.state.movies} />}
                     />
-                    <Route path="/contact-us" component={Contact} />
-                    <Route path="/favorites" component={MyFavorites} />
+                    <Route path={process.env.PUBLIC_URL + '/contact-us'} component={Contact} />
+                    <Route path={process.env.PUBLIC_URL + '/favorites'} component={MyFavorites} />
                     <Route
-                        path="/movie/:movie/:id"
+                        path={process.env.PUBLIC_URL + '/movie/:movie/:id'}
                         render={props => <MoviePage key={props.match.params.id} {...props} />}
                     />
                     <Route
-                        path="/search/:query/"
+                        path={process.env.PUBLIC_URL + '/search/:query/'}
                         render={props => (
                             <SearchResults key={props.match.params.query} {...props} />
                         )}
+                    />
+                    <Route
+                        exact
+                        path={process.env.PUBLIC_URL + '/'}
+                        render={() => <PopularPage movies={this.state.movies} />}
                     />
                     <Footer />
                 </div>
