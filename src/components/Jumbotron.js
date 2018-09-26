@@ -13,7 +13,7 @@ const Wrapper = styled.section`
     display: flex;
     height: 100vh;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     position: relative;
 `;
 

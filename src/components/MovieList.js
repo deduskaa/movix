@@ -48,9 +48,9 @@ class MovieList extends React.Component {
         console.log(direction);
         let listOffset;
         if (direction === 'right') {
-            listOffset = this.state.listOffset > -4020 ? this.state.listOffset - 268 : 0;
+            listOffset = this.state.listOffset > -3640 ? this.state.listOffset - 260 : 0;
         } else {
-            listOffset = this.state.listOffset < 0 ? this.state.listOffset + 268 : -4020;
+            listOffset = this.state.listOffset < 0 ? this.state.listOffset + 260 : -3640;
         }
 
         this.setState({ listOffset });
