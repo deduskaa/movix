@@ -46,7 +46,7 @@ export default class SearchResults extends Component {
                 <Results>
                     {this.state.results.map(movie => (
                         // <MovieResult {...movie} />
-                        <Movie {...movie} />
+                        <Movie key={movie.id} {...movie} />
                     ))}
                 </Results>
             </Wrapper>
