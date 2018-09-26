@@ -105,7 +105,7 @@ export default class Movie extends Component {
                     <p>
                         <FontAwesomeIcon icon="star" /> {vote_average}
                     </p>
-                    <Link to={`/movie/${encodeURIComponent(urlTitle(title))}/${id}`}>
+                    <Link to={`./movie/${encodeURIComponent(urlTitle(title))}/${id}`}>
                         <PrimaryButton title="View" icon={<FontAwesomeIcon icon="eye" />} />
                     </Link>
                     {this.state.isSaved ? (
