@@ -55,7 +55,7 @@ const Title = styled.h1`
 `;
 
 const Description = styled.p`
-    color: #ddddddb0;
+    color: rgba(221, 221, 221, 0.85);
     font-size: 18px;
     letter-spacing: 0.25px;
     line-height: 30px;

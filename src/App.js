@@ -53,7 +53,7 @@ class App extends Component {
                         render={() => <PopularPage movies={this.state.movies} />}
                     />
                     <Route
-                        path="/top-rated"
+                        path={process.env.PUBLIC_URL + '/top-rated'}
                         render={() => <TopRatedPage movies={this.state.movies} />}
                     />
                     <Route path={process.env.PUBLIC_URL + '/contact-us'} component={Contact} />

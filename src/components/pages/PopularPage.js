@@ -5,7 +5,7 @@ import Loading from '../Loading';
 
 const PopularPage = props => {
     const { popular, topRated } = props.movies;
-    if (!props.movies) return <Loading />;
+    if (popular.length === 0) return <Loading />;
     const mostPopular = popular[0];
 
     return (

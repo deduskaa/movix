@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Search from './Search';
 import { media } from '../utils';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -142,10 +142,10 @@ class Nav extends React.Component {
 
     render() {
         const routes = [
-            { path: '/popular', title: 'Popular' },
-            { path: '/top-rated', title: 'Top Rated' },
-            { path: '/favorites', title: 'My Favorites' },
-            { path: '/contact-us', title: 'Contact' }
+            { path: `${process.env.PUBLIC_URL}/popular`, title: 'Popular' },
+            { path: `${process.env.PUBLIC_URL}/top-rated`, title: 'Top Rated' },
+            { path: `${process.env.PUBLIC_URL}/favorites`, title: 'My Favorites' },
+            { path: `${process.env.PUBLIC_URL}/contact-us`, title: 'Contact' }
         ];
         return (
             <Wrapper onTop={this.state.onTop}>
@@ -160,14 +160,14 @@ class Nav extends React.Component {
                     </Icon>
                     {routes.map(route => (
                         <NavItem key={route.path}>
-                            <NavLink to={route.path}>{route.title}</NavLink>
+                            <Link to={route.path}>{route.title}</Link>
                         </NavItem>
                     ))}
                 </Menu>
                 <ul>
                     {routes.map(route => (
                         <NavItem key={route.path}>
-                            <NavLink to={route.path}>{route.title}</NavLink>
+                            <Link to={route.path}>{route.title}</Link>
                         </NavItem>
                     ))}
                 </ul>

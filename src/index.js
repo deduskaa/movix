@@ -12,8 +12,6 @@ const genreUrl = `${config.apiUrl}genre/movie/list?api_key=${config.apiKey}`;
 async function getMovieApiConfig() {
     await checkIfInCache(configUrl).then(data => (config.movieApiConfig = data));
     await checkIfInCache(genreUrl).then(data => (config.movieGenres = data.genres));
-    console.log('done');
-    
 }
 
 getMovieApiConfig().then(() => {

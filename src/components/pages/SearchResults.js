@@ -42,7 +42,7 @@ export default class SearchResults extends Component {
             });
     }
     render() {
-        if (!this.state.results) return <Loading />;
+        if (this.state.results.length === 0) return <Loading />;
         return (
             <Wrapper>
                 <Title>

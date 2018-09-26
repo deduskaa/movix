@@ -52,8 +52,12 @@ export function removeFromList(movie) {
 
 export function isSaved(movie) {
     const savedMovies = JSON.parse(localStorage.getItem('savedMovies'));
-    const savedMovieIds = Object.keys(savedMovies);    
-    return savedMovieIds.includes(movie.id.toString());
+    if (savedMovies) {
+        const savedMovieIds = Object.keys(savedMovies);
+        return savedMovieIds.includes(movie.id.toString());
+    } else {
+        return false;
+    }
 }
 
 /*STYLED COMPONENTS MEDIA QUERYS */

@@ -6,7 +6,9 @@ import Loading from '../Loading';
 class TopRatedPage extends Component {
     render() {
         const { topRated, popular } = this.props.movies;
-        if (!this.props.movies) return <Loading />;
+        console.log(topRated);
+
+        if (topRated.length === 0) return <Loading />;
         const mostRated = topRated[0];
 
         return (

@@ -11,7 +11,7 @@ const Form = styled.form`
     flex: 1 1 auto;
     margin: 0 40px;
 
-    ${media.tablet`display: none;`}
+    ${media.tablet`display: none;`};
 `;
 
 const Button = styled.button`
@@ -23,7 +23,6 @@ const Button = styled.button`
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     font-size: 18px;
-
 `;
 
 const Input = styled.input`
@@ -46,10 +45,10 @@ class Search extends Component {
         e.preventDefault();
         const { value } = this.state;
         console.log(this.props);
-        this.props.history.push(`/search/${value}`);
+        this.props.history.push(`${process.env.PUBLIC_URL}/search/${value}`);
     };
 
-    render() { 
+    render() {
         return (
             <Form onSubmit={this.handleSubmit}>
                 <Input

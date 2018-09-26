@@ -14,13 +14,13 @@ const Favorites = styled.div`
 `;
 
 export default class MyFavorites extends Component {
-    savedMovies = JSON.parse(localStorage.getItem('savedMovies'));
+    savedMovies = JSON.parse(localStorage.getItem('savedMovies')) || {};
     constructor(props) {
         super(props);
 
         const movieIds = Object.keys(this.savedMovies);
         this.state = {
-            favoriteIds: movieIds || []
+            favoriteIds: movieIds
         };
     }
 
