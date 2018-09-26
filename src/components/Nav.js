@@ -90,7 +90,7 @@ const Menu = styled.div`
 `;
 
 const Logo = () => (
-    <LogoWrapper href="/">
+    <LogoWrapper href={process.env.PUBLIC_URL}>
         <svg>
             <circle cx="32" cy="32" fill="#9067c6" r="32" />
             <path
