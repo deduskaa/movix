@@ -34,7 +34,12 @@ export default class SearchResults extends Component {
         }`;
         fetch(url)
             .then(response => response.json())
-            .then(data => this.setState({ results: data.results }));
+            .then(data => {
+                const results = data.results.filter(
+                    movie => movie.genre_ids.length > 0 || movie.poster_path
+                );
+                this.setState({ results });
+            });
     }
     render() {
         if (!this.state.results) return <Loading />;
