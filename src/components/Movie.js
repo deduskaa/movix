@@ -126,7 +126,7 @@ export default class Movie extends Component {
                         />
                     )}
                 </Content>
-                <Poster bg={`${config.movieApiConfig.images.base_url}w342${poster_path}`} />
+                <Poster bg={`${config.movieApiConfig.images.secure_base_url}w342${poster_path}`} />
             </Wrapper>
         );
     }

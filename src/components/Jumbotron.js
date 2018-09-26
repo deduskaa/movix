@@ -26,7 +26,7 @@ const Content = styled.div`
 `;
 
 const MovieFullScreen = styled.div`
-    background-image: url(${p => `${config.movieApiConfig.images.base_url}w1280${p.bg}`});
+    background-image: url(${p => `${config.movieApiConfig.images.secure_base_url}w1280${p.bg}`});
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;

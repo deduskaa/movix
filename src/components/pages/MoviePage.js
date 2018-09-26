@@ -9,7 +9,7 @@ import { media } from '../../utils';
 import Loading from '../Loading';
 
 const Background = styled.div`
-    background-image: url(${p => `${config.movieApiConfig.images.base_url}w1280${p.bg}`});
+    background-image: url(${p => `${config.movieApiConfig.images.secure_base_url}w1280${p.bg}`});
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -53,7 +53,7 @@ const Info = styled.div`
 `;
 
 const Poster = styled.div`
-    background-image: url(${p => `${config.movieApiConfig.images.base_url}w342${p.bg}`});
+    background-image: url(${p => `${config.movieApiConfig.images.secure_base_url}w342${p.bg}`});
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;

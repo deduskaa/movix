@@ -59,7 +59,7 @@ const CrewItem = ({ crew }) => (
     <Li>
         {crew.profile_path ? (
             <img
-                src={`${config.movieApiConfig.images.base_url}w185${crew.profile_path}`}
+                src={`${config.movieApiConfig.images.secure_base_url}w185${crew.profile_path}`}
                 alt={crew.name}
             />
         ) : (
