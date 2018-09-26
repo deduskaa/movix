@@ -6,6 +6,7 @@ import MovieList from '../MovieList';
 import Stats from '../Stats';
 import CreditsList from '../CreditsList';
 import { media } from '../../utils';
+import Loading from '../Loading';
 
 const Background = styled.div`
     background-image: url(${p => `${config.movieApiConfig.images.base_url}w1280${p.bg}`});
@@ -112,7 +113,7 @@ export default class MoviePage extends Component {
 
     render() {
         const { movieData, similar, credits } = this.state;
-        if (!movieData) return null;
+        if (!movieData) return <Loading />;
         return (
             <Wrapper>
                 <Background bg={movieData.backdrop_path} />
