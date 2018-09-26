@@ -6,24 +6,24 @@ import styled from 'styled-components';
 import { theme } from '../config';
 
 const Wrapper = styled.footer`
-    padding: 20px;
     color: #fff;
     display: flex;
     justify-content: center;
+    padding: 20px;
     padding: 40px 15px;
 `;
 
 const IconWrapper = styled.button`
-    border-radius: 50%;
-    padding: 10px 15px;
-    min-width: 50px;
-    font-size: 20px;
     background-color: rgba(255, 255, 255, 0.15);
-    margin: 0 20px;
+    border-radius: 50%;
+    border: none;
     color: #fff;
     cursor: pointer;
+    font-size: 20px;
+    margin: 0 20px;
+    min-width: 50px;
+    padding: 10px 15px;
     transition: background-color 0.4s;
-    border: none;
 
     &:hover {
         background-color: ${theme.colors.main};
