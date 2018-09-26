@@ -40,6 +40,7 @@ export default class MyFavorites extends Component {
                                 {...this.savedMovies[id]}
                                 key={id}
                                 removeFromFavorites={this.removeFromFavorites}
+                                inFavorites
                             />
                         ))}
                     </Favorites>

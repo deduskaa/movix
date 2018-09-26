@@ -86,14 +86,14 @@ export default class Movie extends Component {
 
     remove = movie => {
         removeFromList(movie);
-        this.setState(
-            { style: { opacity: 0, transform: 'rotateY(70deg)' }, isSaved: false },
-            () => {
+        this.setState({ isSaved: false });
+        if (this.props.inFavorites) {
+            this.setState({ style: { opacity: 0, transform: 'rotateY(70deg)' } }, () => {
                 setTimeout(() => {
                     this.props.removeFromFavorites(movie.id);
                 }, 500);
-            }
-        );
+            });
+        }
     };
 
     render() {
