@@ -1,6 +1,13 @@
 {
-  "main.css": "static/css/main.0103e5d1.css",
-  "main.css.map": "static/css/main.0103e5d1.css.map",
-  "main.js": "static/js/main.2e07f494.js",
-  "main.js.map": "static/js/main.2e07f494.js.map"
+  "main.css": "/movix/static/css/main.37021979.chunk.css",
+  "main.js": "/movix/static/js/main.bd88846d.chunk.js",
+  "main.js.map": "/movix/static/js/main.bd88846d.chunk.js.map",
+  "runtime~main.js": "/movix/static/js/runtime~main.31227d2d.js",
+  "runtime~main.js.map": "/movix/static/js/runtime~main.31227d2d.js.map",
+  "static/js/2.8b4ae351.chunk.js": "/movix/static/js/2.8b4ae351.chunk.js",
+  "static/js/2.8b4ae351.chunk.js.map": "/movix/static/js/2.8b4ae351.chunk.js.map",
+  "index.html": "/movix/index.html",
+  "precache-manifest.2260e378f42313e0395f23ba44e79d9d.js": "/movix/precache-manifest.2260e378f42313e0395f23ba44e79d9d.js",
+  "service-worker.js": "/movix/service-worker.js",
+  "static/css/main.37021979.chunk.css.map": "/movix/static/css/main.37021979.chunk.css.map"
 }
