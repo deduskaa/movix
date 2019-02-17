@@ -6,7 +6,7 @@ export const Button = styled.button`
     border-radius: 30px;
     border: 0;
     color: #fff;
-    cursor: pointer;
+    ${p => p.onClick && 'cursor: pointer;' }
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 1.2px;
@@ -16,10 +16,6 @@ export const Button = styled.button`
     position: relative;
     text-transform: uppercase;
     transition: background-color 0.7s;
-
-    /* &:first-of-type {
-        margin: 5px 8px 5px 0;
-    } */
 
     &:before {
         opacity: 0;

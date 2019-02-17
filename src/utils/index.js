@@ -21,7 +21,6 @@ export function checkIfInCache(url) {
             return (
                 response ||
                 fetch(url).then(function(r) {
-                    console.log('fetched'); // TODO: Remove
                     caches.open('v1').then(function(cache) {
                         cache.put(url, r);
                     });

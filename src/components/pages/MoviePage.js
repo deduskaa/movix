@@ -145,12 +145,3 @@ export default class MoviePage extends Component {
         );
     }
 }
-
-// cast_id: 3
-// character: "Andy Dufresne"
-// credit_id: "52fe4231c3a36847f800b131"
-// gender: 2
-// id: 504
-// name: "Tim Robbins"
-// order: 0
-// profile_path: "/7pirFsBQe93TSfzu404Hgcj1YWj.jpg"
